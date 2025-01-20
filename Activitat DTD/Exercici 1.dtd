@@ -1,0 +1,13 @@
+<!-- Definició de l'estructura per als esdeveniments -->
+<!ELEMENT esdeveniments (esdeveniment+)>
+<!-- Un esdeveniment conté informació del grup, lloc, data i entrada -->
+<!ELEMENT esdeveniment (grup, lloc, data, entrada)>
+<!-- El nom del grup musical -->
+<!ELEMENT grup (#PCDATA)>
+<!-- El lloc on es fa l'esdeveniment -->
+<!ELEMENT lloc (#PCDATA)>
+<!-- La data i hora de l'esdeveniment -->
+<!ELEMENT data (#PCDATA)>
+<!-- La informació de l'entrada amb l'opció de gratuïtat -->
+<!ELEMENT entrada (#PCDATA)>
+<!ATTLIST entrada gratuita (si|no) #REQUIRED>
